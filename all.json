@@ -7,6 +7,7 @@
    
  
   {
+      {
     "name": "📺荐片",
     "api": "https://api.ztcgi.com",
     "type": 2,
@@ -17,15 +18,15 @@
       "Referer": "https://api.ztcgi.com"
     },
     "categories": [
-      { "name": "电影", "url": "/api/crumb/list?fcate_pid=1&page={{page}}&type=0&sort=update&area=&year=&category_id=" },
-      { "name": "电视剧", "url": "/api/crumb/list?fcate_pid=2&page={{page}}&type=0&sort=update&area=&year=&category_id=" },
-      { "name": "动漫", "url": "/api/crumb/list?fcate_pid=3&page={{page}}&type=0&sort=update&area=&year=&category_id=" },
-      { "name": "综艺", "url": "/api/crumb/list?fcate_pid=4&page={{page}}&type=0&sort=update&area=&year=&category_id=" }
+      { "name": "电影", "url": "/api/crumb/list?fcate_pid=1&page={{page}}&type=0&sort=update" },
+      { "name": "电视剧", "url": "/api/crumb/list?fcate_pid=2&page={{page}}&type=0&sort=update" },
+      { "name": "动漫", "url": "/api/crumb/list?fcate_pid=3&page={{page}}&type=0&sort=update" },
+      { "name": "综艺", "url": "/api/crumb/list?fcate_pid=4&page={{page}}&type=0&sort=update" }
     ],
     "list": {
       "list": "$.data",
       "name": "$.title",
-      "coverUrl": "https://img.jgsfnl.com{{$.path}}",
+      "coverUrl": "$.path",
       "detailUrl": "/api/video/detailv2?id={{$.id}}",
       "tips": "$.mask"
     },
@@ -33,7 +34,7 @@
       "url": "/api/v2/search/videoV2?key={{key}}&category_id=88&page={{page}}&pageSize=20",
       "list": "$.data",
       "name": "$.title",
-      "coverUrl": "https://img.jgsfnl.com{{$.thumbnail}}",
+      "coverUrl": "$.thumbnail",
       "detailUrl": "/api/video/detailv2?id={{$.id}}",
       "tips": "$.mask"
     },
