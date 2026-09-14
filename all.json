@@ -7,41 +7,7 @@
    
     
     
-    {
-      "name": "🎨包子漫画",
-      "type": 12,
-      "api": "https://cn.baozimhcn.com",
-      "categories": [
-        { "name": "推荐", "url": "/classify" },
-        { "name": "国漫", "url": "/classify?type=all&region=cn&state=all" },
-        { "name": "日本", "url": "/classify?type=all&region=jp&state=all" },
-        { "name": "韩国", "url": "/classify?type=all&region=kr&state=all" },
-        { "name": "欧美", "url": "/classify?type=all&region=en&state=all" }
-      ],
-      "detail": {
-        "intro": ".comics-detail__desc.0@text",
-        "category": "head > meta[name=\"og:novel:category\"]@content",
-        "tips": "head > meta[name=\"og:novel:latest_chapter_name\"]@content"
-      },
-      "content": {
-        "content": ".comic-contain amp-img@src"
-      },
-      "search": {
-        "list": ".comics-card",
-        "name": "a.0@title",
-        "author": "small.text-truncate.0@text",
-        "detailUrl": "a.0@href",
-        "coverUrl": "amp-img.0@src",
-        "url": "/search?q={{key}}"
-      },
-      "toc": {
-        "list": "#chapter-items a,#chapters_other_list a",
-        "name": "text",
-        "url": "href"
-      },
-      "searchable": true,
-      "discoverable": true
-    },
+   
    
     
    
@@ -139,34 +105,7 @@
       "searchable": true,
       "discoverable": true
     },
-    {
-      "name": "Auete",
-      "api": "https://auete.top",
-      "type": 2,
-      "categories": [
-        { "name": "电影", "url": "/Movie/index{{page}}.html", "url2": "/Movie/index.html" },
-        { "name": "电视剧", "url": "/Tv/index{{page}}.html", "url2": "/Tv/index.html" },
-        { "name": "国产剧", "url": "/Tv/neidi/index{{page}}.html", "url2": "/Tv/neidi/index.html" },
-        { "name": "美剧", "url": "/Tv/oumei/index{{page}}.html", "url2": "/Tv/oumei/index.html" },
-        { "name": "动漫", "url": "/Dm/index{{page}}.html", "url2": "/Dm/index.html" },
-        { "name": "综艺", "url": "/Zy/index{{page}}.html", "url2": "/Zy/index.html" }
-      ],
-      "list": {
-        "list": ".threadlist li",
-        "name": "h2 a@text",
-        "tips": ".hdtag@text",
-        "coverUrl": "img@src",
-        "detailUrl": "a@href"
-      },
-      "detail": {
-        "meta": ".message p@html"
-      },
-      "play": {
-        "list": "#player_list.0@a",
-        "name": "text",
-        "url": "href"
-      }
-    },
+    
     {
       "name": "📺金牌",
       "api": "https://www.hellorlgzf7sn.com",
@@ -323,6 +262,40 @@
       "detail": {
         "meta": "#info@html"
       }
+    }, {
+      "name": "🎨包子漫画",
+      "type": 12,
+      "api": "https://cn.baozimhcn.com",
+      "categories": [
+        { "name": "推荐", "url": "/classify" },
+        { "name": "国漫", "url": "/classify?type=all&region=cn&state=all" },
+        { "name": "日本", "url": "/classify?type=all&region=jp&state=all" },
+        { "name": "韩国", "url": "/classify?type=all&region=kr&state=all" },
+        { "name": "欧美", "url": "/classify?type=all&region=en&state=all" }
+      ],
+      "detail": {
+        "intro": ".comics-detail__desc.0@text",
+        "category": "head > meta[name=\"og:novel:category\"]@content",
+        "tips": "head > meta[name=\"og:novel:latest_chapter_name\"]@content"
+      },
+      "content": {
+        "content": ".comic-contain amp-img@src"
+      },
+      "search": {
+        "list": ".comics-card",
+        "name": "a.0@title",
+        "author": "small.text-truncate.0@text",
+        "detailUrl": "a.0@href",
+        "coverUrl": "amp-img.0@src",
+        "url": "/search?q={{key}}"
+      },
+      "toc": {
+        "list": "#chapter-items a,#chapters_other_list a",
+        "name": "text",
+        "url": "href"
+      },
+      "searchable": true,
+      "discoverable": true
     },
     { "name": "📺优质", "api": "https://api.yzzy-api.com/inc/apijson.php" },
     { "name": "📺如意", "api": "https://cj.rycjapi.com/api.php/provide/vod/from/rym3u8", "discoverable": false },
