@@ -6,8 +6,7 @@
   "sites": [
    
  
-  {
-      {
+   {
     "name": "📺荐片",
     "api": "https://api.ztcgi.com",
     "type": 2,
@@ -18,10 +17,7 @@
       "Referer": "https://api.ztcgi.com"
     },
     "categories": [
-      { "name": "电影", "url": "/api/crumb/list?fcate_pid=1&page={{page}}&type=0&sort=update" },
-      { "name": "电视剧", "url": "/api/crumb/list?fcate_pid=2&page={{page}}&type=0&sort=update" },
-      { "name": "动漫", "url": "/api/crumb/list?fcate_pid=3&page={{page}}&type=0&sort=update" },
-      { "name": "综艺", "url": "/api/crumb/list?fcate_pid=4&page={{page}}&type=0&sort=update" }
+      { "name": "推荐", "url": "/api/crumb/list?fcate_pid=1&page={{page}}&type=0&sort=update" }
     ],
     "list": {
       "list": "$.data",
