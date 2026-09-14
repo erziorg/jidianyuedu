@@ -4,7 +4,8 @@
     { "name": "音频", "type": 2, "api":"https://raw.githubusercontent.com/zhaomei19/gaotianliuyun_gao_tvbox/master/radio.m3u" }
   ],
   "sites": [
-   {
+   
+  {
     "name": "📺荐片",
     "api": "https://api.ztcgi.com",
     "type": 2,
@@ -26,11 +27,12 @@
       "meta": "$.data.intro"
     },
     "play": {
-      "list": "$.data.source_list_source[*].source_list[*]",
+      "list": "$.data.source_list_source[0].source_list[*]",
       "name": "$.source_name",
       "url": "$.url"
     }
-  },
+  }
+,
  {
       "name": "📺骚火",
       "api": "https://saohuo.tv",
