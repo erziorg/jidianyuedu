@@ -6,43 +6,7 @@
   "sites": [
    
  
-     {
-    "name": "📺荐片",
-    "api": "https://api.ztcgi.com",
-    "type": 2,
-    "searchable": true,
-    "discoverable": true,
-    "header": {
-      "User-Agent": "Mozilla/5.0 (Linux; Android 9; V2196A Build/PQ3A.190705.08211809; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/91.0.4472.114 Mobile Safari/537.36;webank/h5face;webank/1.0;netType:NETWORK_WIFI;appVersion:416;packageName:com.jp3.xg3",
-      "Referer": "https://api.ztcgi.com"
-    },
-    "categories": [
-      { "name": "推荐", "url": "/api/crumb/list?fcate_pid=1&page={{page}}&type=0&sort=update" }
-    ],
-    "list": {
-      "list": "$.data[*]",
-      "name": "$.title",
-      "coverUrl": "$.path",
-      "detailUrl": "/api/video/detailv2?id={{$.id}}",
-      "tips": "$.mask"
-    },
-    "search": {
-      "url": "/api/v2/search/videoV2?key={{key}}&category_id=88&page={{page}}&pageSize=20",
-      "list": "$.data[*]",
-      "name": "$.title",
-      "coverUrl": "$.thumbnail",
-      "detailUrl": "/api/video/detailv2?id={{$.id}}",
-      "tips": "$.mask"
-    },
-    "detail": {
-      "meta": "$.data.intro"
-    },
-    "play": {
-      "list": "$.data.source_list_source[0].source_list[*]",
-      "name": "$.source_name",
-      "url": "$.url"
-    }
-  },
+     
  {
       "name": "📺骚火",
       "api": "https://saohuo.tv",
