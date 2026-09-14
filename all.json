@@ -1,7 +1,7 @@
 {
   "lives": [
     { "name": "视频", "type": 1, "api": "https://live.fanmingming.com/tv/m3u/ipv6.m3u" },
-    { "name": "音频", "type": 2, "api":"https://raw.githubusercontent.com/RootShell-coder/pcradio.m3u/master/pcradio.m3u" }
+    { "name": "音频", "type": 2, "api":"https://raw.githubusercontent.com/zhaomei19/gaotianliuyun_gao_tvbox/master/radio.m3u" }
   ],
   "sites": [
    
