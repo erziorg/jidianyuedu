@@ -6,7 +6,7 @@
   "sites": [
    
  
-   {
+     {
     "name": "📺荐片",
     "api": "https://api.ztcgi.com",
     "type": 2,
@@ -20,7 +20,7 @@
       { "name": "推荐", "url": "/api/crumb/list?fcate_pid=1&page={{page}}&type=0&sort=update" }
     ],
     "list": {
-      "list": "$.data",
+      "list": "$.data[*]",
       "name": "$.title",
       "coverUrl": "$.path",
       "detailUrl": "/api/video/detailv2?id={{$.id}}",
@@ -28,7 +28,7 @@
     },
     "search": {
       "url": "/api/v2/search/videoV2?key={{key}}&category_id=88&page={{page}}&pageSize=20",
-      "list": "$.data",
+      "list": "$.data[*]",
       "name": "$.title",
       "coverUrl": "$.thumbnail",
       "detailUrl": "/api/video/detailv2?id={{$.id}}",
