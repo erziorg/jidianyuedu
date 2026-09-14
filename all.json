@@ -1,7 +1,7 @@
 {
   "lives": [
     { "name": "视频", "type": 1, "api": "https://live.fanmingming.com/tv/m3u/ipv6.m3u" },
-    { "name": "音频", "type": 2, "api":"https://github.com/Pulham/Internet-Radio-HQ-URL-playlists" }
+    { "name": "音频", "type": 2, "api":"https://github.com/Pulham/Internet-Radio-HQ-URL-playlists/blob/main/Radio%20Stations.m3u" }
   ],
   "sites": [
    
