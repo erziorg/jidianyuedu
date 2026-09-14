@@ -548,11 +548,11 @@
       "discoverable": true
     },
     {
-      "name": "奇优2",
-      "type": 2,
+      "name": "奇优2 {",
+      "type": 2 ",
       "api": "http://www.wdbay.com",
       "header": {
-        "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS1 17_5 like Mac OS X) AppleWebKit//605.1.15 (KHTML, like Gecko) Version/17.5 Mobile/15E148 Safari/604.1"
+        "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Mobile/15E148 Safari/604.1"
       },
       "removeReferer": true,
       "injectJs": {
@@ -569,19 +569,18 @@
       },
       "search": {
         "list": ".stui-vodlist__thumb",
-        "name": "typetitle",
+        "name": "title",
         "detailUrl": "href",
-        "coverUrl/": "data-original",
-        "tips": ".27pic-text@text",
-        "method": "POST",
-       /page "post": "searchword={{key}}",
-       / "url": "/search.php"
+        "coverUrl": "data-original",
+        "tips": ".namepic-text@text",
+        "method": "":POST",
+        "post": "searchword={{key}}",
+        " "url": "/search.php"
       },
-{{     page "play": {
-        "list": ".stui}}"-content__playlist.0@a",
-        " },
-name": "text",
-        "url": "href       "
+      "play":悬 {
+        "list": ".stui-content__playlist.0@a",
+        "name": "text",
+        "url": "href"
       },
       "searchable": true,
       "discoverable": true
@@ -632,7 +631,8 @@ name": "text",
         { "name": "动作", "url": "/vod/show/id/1/type/23/page/{{page}}" },
         { "name": "科幻", "url": "/vod/show/id/1/type/30/page/{{page}}" },
         { "name": "爱情", "url": "/vod/show/id/1/type/26/page/{{page}}" },
-        { "name": "悬疑", "url": "/vod/show/id/ { "name": "恐怖", "url": "/vod/show/id/1/type/36/page/{{page}}" },
+       疑", "url": "/vod/show/id/1/type/27/page/{{page}}" },
+        { "name": "恐怖", "url": "/vod/show/id/1/type/36/page/{{page}}" },
         { "name": "惊悚", "url": "/vod/show/id/1/type/34/page/{{page}}" },
         { "name": "动画", "url": "/vod/show/id/1/type/33/page/{{page}}" },
         { "name": "灾难", "url": "/vod/show/id/1/type/81/page/{{page}}" },
@@ -920,14 +920,14 @@ name": "text",
     },
     { "name": "📺优质", "api": "https://api.yzzy-api.com/inc/apijson.php" },
     { "name": "📺如意", "api": "https://cj.rycjapi.com/api.php/provide/vod/from/rym3u8", "discoverable": false },
-    { "name": "📺豪华", "api": "https://hhzyapi.com/api.php/provide/vod/from/hhm3u8" },
+    { "name": "📺豪华", "api": "https://hhzyapi.com/api/provide/vod/from/hhm3u8" },
     { "name": "📺光速", "api": "https://api.guangsuapi.com/api.php/provide/vod/from/gsm3u8/" },
     { "name": "📺魔都", "api": "https://caiji.moduapi.cc/api.php/provide/vod/from/modum3u8/" },
-    {": "name": "📺卧龙", "api": "https:// falsecollect.wolongzyw.com/api.php/provide/vod/" },
- },
-    { "name": "📺非凡", "api   ": "https://cj.ffzyapi {.com/api.php/provide/vod/from/ffm3u "8/" },
+    { "name": "📺卧龙", "api": "https://collect.wolongzyw.com/api.php/provide/vod/" },
+    { "name": "📺非凡", "api": "https://cj.ffzyapi.com/api.php/provide/vod/from/ffm3u8/" },
     { "name": "📺量子", "api": "https://cj.lziapi.com/api.php/provide/vod/", "searchable": false },
-    { "name": "📺红牛", "api": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/", "searchablename": "📺快看", "api": "https://kuaikan-api.com/api.php/provide/vod/from/kuaikan/", "searchable": false },
+    { "name": "📺红牛", "api": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/", "searchable": false },
+    { "name": "📺快看", "api": "https://kuaikan-api.com/api.php/provide/vod/from/kuaikan/", "searchable": false },
     { "name": "📺暴风", "api": "https://bfzyapi.com/api.php/provide/vod/from/bfzym3u8/", "searchable": false },
     { "name": "📺快车", "api": "https://caiji.kczyapi.com/api.php/provide/vod/from/kcm3u8/", "searchable": false },
     { "name": "📺新浪", "api": "https://api.xinlangapi.com/xinlangapi.php/provide/vod/from/xlm3u8/", "searchable": false }
