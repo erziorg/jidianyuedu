@@ -262,19 +262,26 @@
       "discoverable": true
     },
     {
-      "name": "🔰 天域小说网",
-      "type": 10,
-      "api": "https://www.tycqzw.la/",
+      "bookSourceComment": "",
+      "bookSourceGroup": "起点书源",
+      "bookSourceName": "天域小说网",
+      "bookSourceType": 0,
+      "bookSourceUrl": "https://www.tycqzw.la/",
       "bookUrlPattern": "https://www.tycqzw.la/\\d+_\\d+/",
-      "searchable": true,
-      "discoverable": true,
-      "header": "",
+      "customOrder": 48,
+      "enabled": true,
+      "enabledCookieJar": false,
+      "enabledExplore": false,
       "exploreUrl": "[{\"title\":\"全部小说\",\"url\":\"https://m.tycqzw.la/xclass/0/{{page}}.html\",\"style\":{\"layout_flexGrow\":0.25}},{\"title\":\"玄幻小说\",\"url\":\"https://m.tycqzw.la/xclass/1/{{page}}.html\",\"style\":{\"layout_flexGrow\":0.25}},{\"title\":\"修真小说\",\"url\":\"https://m.tycqzw.la/xclass/2/{{page}}.html\",\"style\":{\"layout_flexGrow\":0.25}},{\"title\":\"都市小说\",\"url\":\"https://m.tycqzw.la/xclass/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":0.25}},{\"title\":\"穿越小说\",\"url\":\"https://m.tycqzw.la/xclass/4/{{page}}.html\",\"style\":{\"layout_flexGrow\":0.25}},{\"title\":\"网游小说\",\"url\":\"https://m.tycqzw.la/xclass/5/{{page}}.html\",\"style\":{\"layout_flexGrow\":0.25}},{\"title\":\"科幻小说\",\"url\":\"https://m.tycqzw.la/xclass/6/{{page}}.html\",\"style\":{\"layout_flexGrow\":0,\"layout_flexBasisPercent\":0.29}},{\"title\":\"其他小说\",\"url\":\"https://m.tycqzw.la/xclass/7/{{page}}.html\",\"style\":{\"layout_flexGrow\":0,\"layout_flexBasisPercent\":0.29}}]",
+      "lastUpdateTime": 1687170210557,
+      "loginUrl": "",
+      "respondTime": 14054,
       "ruleBookInfo": {
         "author": "id.info@tag.p.0@text##作\\s*者：",
         "coverUrl": "id.fmimg@tag.img@src",
+        "init": "",
         "intro": "id.intro@text",
-        "kind": "[property=og:novel:update_time]@content&&[property=og:novel:category]@content&&[property=og:novel:status]@content",
+        "kind": "[property=og:novel:update_time]@content&&\n[property=og:novel:category]@content&&\n[property=og:novel:status]@content",
         "lastChapter": "id.list@tag.dd.0@a@text##免费章节 |正文卷 |正文 |VIP章节 ",
         "name": "id.info@tag.h1.0@text"
       },
@@ -303,7 +310,8 @@
         "chapterName": "text",
         "chapterUrl": "href"
       },
-      "searchUrl": "/search.php?searchkey={{key}}"
+      "searchUrl": "/search.php?searchkey={{key}}",
+      "weight": 0
     }
   ],
   "rules": [
