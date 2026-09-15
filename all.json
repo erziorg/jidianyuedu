@@ -1,7 +1,7 @@
 {
   "lives": [
     { "name": "视频", "type": 1, "api": "https://live.fanmingming.com/tv/m3u/ipv6.m3u" },
-    { "name": "音频", "type": 2, "api":"https://raw.githubusercontent.com/zhaomei19/gaotianliuyun_gao_tvbox/master/radio.m3u" }
+    { "name": "音频", "type": 2, "api": "https://raw.githubusercontent.com/zhaomei19/gaotianliuyun_gao_tvbox/master/radio.m3u" }
   ],
   "sites": [
     {
@@ -89,8 +89,8 @@
         "post": "searchword={{key}}",
         "url": "/search.php"
       },
-      "toc": {
-        "list": "线路1##.stui-content__playlist:eq(0) a||线路2##.stui-content__playlist:eq(1) a",
+      "play": {
+        "list": ".stui-content__playlist.0@a",
         "name": "text",
         "url": "href"
       },
@@ -116,18 +116,18 @@
         { "name": "科幻", "url": "/vod/show/id/1/type/30/page/{{page}}" },
         { "name": "爱情", "url": "/vod/show/id/1/type/26/page/{{page}}" },
         { "name": "悬疑", "url": "/vod/show/id/1/type/27/page/{{page}}" },
-        { "name": "恐怖", "url": "/vod/show/id/1/type/36/page/{{{{page}}" },
-        { "name": "惊悚", "url": "/vod/show/id/1/type/34/page/page}}" },
+        { "name": "恐怖", "url": "/vod/show/id/1/type/36/page/{{page}}" },
+        { "name": "惊悚", "url": "/vod/show/id/1/type/34/page/{{page}}" },
         { "name": "动画", "url": "/vod/show/id/1/type/33/page/{{page}}" },
         { "name": "灾难", "url": "/vod/show/id/1/type/81/page/{{page}}" },
         { "name": "剧情", "url": "/vod/show/id/1/type/37/page/{{page}}" }
       ],
       "search": {
         "url": "/vod/search/{{key}}",
-        "list": "body@js:function getSearchList(html) { var a = substring(html, '\\\"result\\\":', 11, ']}', 1cover); a = substring(a, '\\\"list\\\":', 7); return a; } getSearchList(__result);",
+        "list": "body@js:function getSearchList(html) { var a = substring(html, '\\\"result\\\":', 11, ']}', 1); a = substring(a, '\\\"list\\\":', 7); return a; } getSearchList(__result);",
         "name": "$.vodName",
         "tips": "$.vodRemarks",
-        "Url": "$.vodPic",
+        "coverUrl": "$.vodPic",
         "detailUrl": "/detail/{{$.vodId}}",
         "rate": "$.vodDoubanScore"
       },
@@ -175,8 +175,8 @@
       "detail": {
         "meta": "#intro@html"
       },
-      "toc": {
-        "list": "线路1##.play_list:eq(0) a||线路2##.play_list:eq(1) a",
+      "play": {
+        "list": ".play_list.current a",
         "name": "text",
         "reverse": true,
         "url": "href"
@@ -214,8 +214,8 @@
       "detail": {
         "meta": ".video-info-item@text"
       },
-      "toc": {
-        "list": "A线##.module-blocklist:eq(0) a||B线##.module-blocklist:eq(1) a",
+      "play": {
+        "list": ".module-blocklist a",
         "name": "span@text",
         "url": "href"
       }
