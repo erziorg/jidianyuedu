@@ -264,34 +264,35 @@
     {
       "name": "📙国学",
       "type": 10,
-      "api": "",
+      "api": "http://www.gudianmingzhu.com",
       "header": {
-        "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148 Safari/604.1"
+        "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148 Safari/604.1",
+        "Referer": "http://www.gudianmingzhu.com/"
       },
       "categories": [
-        { "name": "首页", "url": "http://www.gudianmingzhu.com/guji/index_{{page}}.html", "url2": "http://www.gudianmingzhu.com/guji/" },
-        { "name": "经部", "url": "http://www.gudianmingzhu.com/jingbu/index_{{page}}.html", "url2": "http://www.gudianmingzhu.com/jingbu/" },
-        { "name": "史部", "url": "http://www.gudianmingzhu.com/shibu/index_{{page}}.html", "url2": "http://www.gudianmingzhu.com/shibu/" },
-        { "name": "子部", "url": "http://www.gudianmingzhu.com/zibu/index_{{page}}.html", "url2": "http://www.gudianmingzhu.com/zibu/" },
-        { "name": "集部", "url": "http://www.gudianmingzhu.com/jibu/index_{{page}}.html", "url2": "http://www.gudianmingzhu.com/jibu/" }
+        { "name": "古典名著", "url": "http://www.gudianmingzhu.com/guji/" },
+        { "name": "经部", "url": "http://www.gudianmingzhu.com/jingbu/" },
+        { "name": "史部", "url": "http://www.gudianmingzhu.com/shibu/" },
+        { "name": "子部", "url": "http://www.gudianmingzhu.com/zibu/" },
+        { "name": "集部", "url": "http://www.gudianmingzhu.com/jibu/" }
       ],
+      "list": {
+        "list": "#leftdg .xxk, #leftdg .kxx",
+        "name": "h2 a@text",
+        "detailUrl": "h2 a@href",
+        "coverUrl": "img@src"
+      },
       "detail": {
         "intro": ".mcss@text"
-      },
-      "content": {
-        "content": ".xxtt@html",
-        "nextUrl": ".djpagecon .next@href"
-      },
-      "list": {
-        "list": ".dgcon,.divcon,.xxk,.kxx",
-        "name": "h2.0@text",
-        "detailUrl": "a.0@href",
-        "coverUrl": "img.0@src"
       },
       "toc": {
         "list": ".dnrk a",
         "name": "text",
         "url": "href"
+      },
+      "content": {
+        "content": ".xxtt@html",
+        "nextUrl": ".djpagecon .next@href"
       },
       "searchable": false,
       "discoverable": true
