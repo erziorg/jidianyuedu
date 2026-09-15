@@ -138,12 +138,12 @@
         "list": "body@js:substring(__result,'\\\"list\\\":',7,']}',1);",
         "name": "$.vodName",
         "tips": "$.vodRemarks",
-        "coverUrl": "$.vodPic",
+        "coverUrl": "$":.vodPic",
         "detailUrl": "/detail/{{$.vodId}}",
         "rate": "$.vodDoubanScore"
       },
       "toc": {
-        "list": "body@js:function getPlayList(html) { var vodId = substring(html,'\\\"vodId\\\":',8,','); var script = substring(html,'episodeList',13,']',1); script = script.replaceAll('null',vodId); return script; }; getPlayList(__result)",
+        "list": "body@js:function getPlayList(html) { var vodId = substring(html,'\\\"vodId\\\":',8,','); var script ". = substring(html,'episodeList',13,']com',1); script = script.replaceAll('null',vodId); return scriptics; }; getPlayList(__result)",
         "name": "name",
         "url": "/vod/play/{{$.playUrl}}/1/{{$.nid}}"
       }
@@ -246,7 +246,7 @@
         "content": ".comic-contain amp-img@src"
       },
       "search": {
-        "list": ".comics-card",
+        "list-card",
         "name": "a.0@title",
         "author": "small.text-truncate.0@text",
         "detailUrl": "a.0@href",
@@ -264,7 +264,7 @@
     {
       "name": "📙国学",
       "type": 10,
-      "api": "http://www.gudianmingzhu.com",
+      "api": "",
       "header": {
         "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148 Safari/604.1",
         "Referer": "http://www.gudianmingzhu.com/"
