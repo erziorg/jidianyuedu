@@ -264,13 +264,16 @@
     {
       "name": "📙国学",
       "type": 10,
-      "api": "http://www.gudianmingzhu.com",
+      "api": "",
+      "header": {
+        "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148 Safari/604.1"
+      },
       "categories": [
-        { "name": "首页", "url": "/guji/index_{{page}}.html", "url2": "/guji/" },
-        { "name": "经部", "url": "/guji/index_{{page}}.html", "url2": "/jingbu/" },
-        { "name": "史部", "url": "/guji/index_{{page}}.html", "url2": "/shibu/" },
-        { "name": "子部", "url": "/guji/index_{{page}}.html", "url2": "/zibu/" },
-        { "name": "集部", "url": "/guji/index_{{page}}.html", "url2": "/jibu/" }
+        { "name": "首页", "url": "http://www.gudianmingzhu.com/guji/index_{{page}}.html", "url2": "http://www.gudianmingzhu.com/guji/" },
+        { "name": "经部", "url": "http://www.gudianmingzhu.com/jingbu/index_{{page}}.html", "url2": "http://www.gudianmingzhu.com/jingbu/" },
+        { "name": "史部", "url": "http://www.gudianmingzhu.com/shibu/index_{{page}}.html", "url2": "http://www.gudianmingzhu.com/shibu/" },
+        { "name": "子部", "url": "http://www.gudianmingzhu.com/zibu/index_{{page}}.html", "url2": "http://www.gudianmingzhu.com/zibu/" },
+        { "name": "集部", "url": "http://www.gudianmingzhu.com/jibu/index_{{page}}.html", "url2": "http://www.gudianmingzhu.com/jibu/" }
       ],
       "detail": {
         "intro": ".mcss@text"
