@@ -273,10 +273,11 @@
         { "name": "集部", "url": "/guji/index_{{page}}.html", "url2": "/jibu/" }
       ],
       "detail": {
-        "intro": ".xxtt.0@text"
+        "intro": ".mcss@text"
       },
       "content": {
-        "content": ".xxtt@html"
+        "content": ".xxtt@html",
+        "nextUrl": ".djpagecon .next@href"
       },
       "list": {
         "list": ".dgcon,.divcon,.xxk,.kxx",
@@ -285,7 +286,7 @@
         "coverUrl": "img.0@src"
       },
       "toc": {
-        "list": ".dnrk a,.dcon a",
+        "list": ".dnrk a",
         "name": "text",
         "url": "href"
       },
