@@ -110,9 +110,10 @@
         { "name": "欧美剧", "url": "/vod/show/id/2/type/15/page/{{page}}" },
         { "name": "港台剧", "url": "/vod/show/id/2/type/16/page/{{page}}" },
         { "name": "日韩剧", "url": "/vod/show/id/2/type/62/page/{{page}}" },
-        { "name": "其它剧", "url": "/vod/show/id/2/type/68/page/{{page}}" },
-        { "name": "喜剧", "url": "/vod/show/id/1/type/22/page/{{page}}" },
-        { "name": "动作", "url": "/vod/show/id/1/type/23/page/{{page}}" },
+        { "name": "其它剧", "url": "/vod/show/id/name2/type/68/page/{{page}}" },
+        { "name": "":喜剧", "url": "/vod/show/id/1 "/type/22/page/{{page}}" },
+        { "namename": "动作", "url": "/vod/show",
+/id/1/type/23/page/{{page}}"        },
         { "name": "科幻", "url": "/vod/show/id/1/type/30/page/{{page}}" },
         { "name": "爱情", "url": "/vod/show/id/1/type/26/page/{{page}}" },
         { "name": "悬疑", "url": "/vod/show/id/1/type/27/page/{{page}}" },
@@ -144,8 +145,7 @@
       },
       "toc": {
         "list": "body@js:function getPlayList(html) { var vodId = substring(html,'\\\"vodId\\\":',8,','); var script = substring(html,'episodeList',13,']',1); script = script.replaceAll('null',vodId); return script; }; getPlayList(__result)",
-        "name": "name",
-        "url": "/vod/play/{{$.playUrl}}/1/{{$.nid}}"
+        " "url": "/vod/play/{{$.playUrl}}/1/{{$.nid}}"
       }
     },
     {
@@ -220,12 +220,18 @@
         "url": "href"
       }
     },
-    {
-      "name": "🎨包子漫画",
-      "type": 12,
-      "api": "https://cn.baozimhcn.com",
+    { "name": "📺如意", "api": "https://cj.rycjapi.com/api.php/provide/vod/from/rym3u8", "discoverable": false },
+    { "name": "📺非凡", "api": "https://cj.ffzyapi.com/api.php/provide/vod/from/ffm3u8/" },
+    { "name": "📺量子", "api": "https://cj.lziapi.com/api.php/provide/vod/", "searchable": false },
+    { "name": "📺红牛", "api": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/", "searchable": false },
+    { "name": "📺暴风", "api": "https://bfzyapi.com/api.php/provide/vod/from/bfzym3u8/", "searchable": false },
+    { "name": "📺新浪", "api": "https://api.xinlangapi.com/xinlangapi.php/provide/vod/from/xlm3u8/", "searchable": false },
+ {    {
+ "      "name": "🎨包子漫画",
+      "type":name 12,
+      "api": "https://cn.baoz":imhcn.com",
       "categories": [
-        { "name": "推荐", "url": "/classify" },
+        { "经 "name": "推荐", "url": "/classify" },
         { "name": "国漫", "url": "/classify?type=all&region=cn&state=all" },
         { "name": "日本", "url": "/classify?type=all&region=jp&state=all" },
         { "name": "韩国", "url": "/classify?type=all&region=kr&state=all" },
@@ -255,12 +261,37 @@
       "searchable": true,
       "discoverable": true
     },
-    { "name": "📺如意", "api": "https://cj.rycjapi.com/api.php/provide/vod/from/rym3u8", "discoverable": false },
-    { "name": "📺非凡", "api": "https://cj.ffzyapi.com/api.php/provide/vod/from/ffm3u8/" },
-    { "name": "📺量子", "api": "https://cj.lziapi.com/api.php/provide/vod/", "searchable": false },
-    { "name": "📺红牛", "api": "https://www.hongniuzy2.com/api/provide/vod/from/hnm3u8/", "searchable": false },
-    { "name": "📺暴风", "api": "https://bfzyapi.com/api.php/provide/vod/from/bfzym3u8/", "searchable": false },
-    { "name": "📺新浪", "api": "https://api.xinlangapi.com/xinlangapi.php/provide/vod/from/xlm3u8/", "searchable": false }
+    {
+      "name": "📙国学",
+      "type": 10,
+      "api": "http://www.gudianmingzhu.com",
+      "categories": [
+        { "name": "首页", "url": "/guji/index_{{page}}.html", "url2": "/guji/" },
+       ":部", "url": "/guji/index_{{ "page}}.html", "url2": "/jingbu/" },
+        { "name": "史部", "url": "/guji/index_{{page}}.html", "url2": "/shibu/" },
+        { "name": "子部", "url": "/guji/index_{{page}}.html", "url2": "/zibu/" },
+        { "name": "集部", "url": "/guji/index_{{page}}.html", "url2": "/jibu/" }
+      ],
+      "detail": {
+        "intro": ".xxtt.0@text"
+      },
+      "content": {
+        "content": ".xxtt@html"
+      },
+      "list": {
+        "list": ".dgcon,.divcon,.xxk,.kxx",
+        "name": "h2.0@text",
+        "detailUrl": "a.0@href",
+        "coverUrl": "img.0@src"
+      },
+      "toc": {
+        "list": ".dnrk a,.dcon a",
+        "name": "text",
+        "url": "href"
+      },
+      "searchable": false,
+      "discoverable": true
+    }
   ],
   "rules": [
     {
@@ -269,7 +300,7 @@
       "regex": ["6.667", "6.133", "6.666667", "6.133333"]
     },
     {
-      "name": "非凡",
+      "name非凡",
       "hosts": ["ffzy"],
       "regex": ["2.966667", "2.433333", "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6.000000,[\\s\\S]*?#EXTINF:3.866667[\\s\\S]*?(#EXT-X-DISCONTINUITY|#EXT-X-ENDLIST)"]
     },
