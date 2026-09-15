@@ -143,8 +143,8 @@
         "rate": "$.vodDoubanScore"
       },
       "toc": {
-        "list": "body@js:function getPlayList(html) { var vodId = substring(html,'\\\"vodId\\\":',8,','); var script = substring(html,'episodeList',13,']',1result); script = script.replaceAll(')",
-null',vodId); return script; }; getPlayList(__        "name": "name",
+        "list": "body@js:function getPlayList(html) { var vodId = substring(html,'\\\"vodId\\\":',8,','); var script = substring(html,'episodeList',13,']',1); script = script.replaceAll('null',vodId); return script; }; getPlayList(__result)",
+        "name": "name",
         "url": "/vod/play/{{$.playUrl}}/1/{{$.nid}}"
       }
     },
@@ -258,7 +258,7 @@ null',vodId); return script; }; getPlayList(__        "name": "name",
     { "name": "📺如意", "api": "https://cj.rycjapi.com/api.php/provide/vod/from/rym3u8", "discoverable": false },
     { "name": "📺非凡", "api": "https://cj.ffzyapi.com/api.php/provide/vod/from/ffm3u8/" },
     { "name": "📺量子", "api": "https://cj.lziapi.com/api.php/provide/vod/", "searchable": false },
-    { "name": "📺红牛", "api": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/", "searchable": false },
+    { "name": "📺红牛", "api": "https://www.hongniuzy2.com/api/provide/vod/from/hnm3u8/", "searchable": false },
     { "name": "📺暴风", "api": "https://bfzyapi.com/api.php/provide/vod/from/bfzym3u8/", "searchable": false },
     { "name": "📺新浪", "api": "https://api.xinlangapi.com/xinlangapi.php/provide/vod/from/xlm3u8/", "searchable": false }
   ],
