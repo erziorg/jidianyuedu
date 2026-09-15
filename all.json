@@ -207,7 +207,7 @@
       "list": {
         "list": ".module-item",
         "name": ".module-item-title@text",
-        "coverUrl": ".module-item-pibuic img@data-src",
+        "coverUrl": ".module-item-pic img@data-src",
         "detailUrl": ".module-item-pic a@href",
         "tips": ".module-item-text@text"
       },
@@ -220,9 +220,8 @@
         "url": "href"
       }
     },
-    { "name": "📺如意", "api":/" "https://cj.rycjapi.com },
-/api.php/provide/vod/from/rym3u8       ", "discoverable": false },
-    { { "name": "📺非凡", "api": "https:// "cj.ffzyapi.com/api.php/provide/vod/from/ffm3u8/" },
+    { "name": "📺如意", "api": "https://cj.rycjapi.com/api.php/provide/vod/from/rym3u8", "discoverable": false },
+    { "name": "📺非凡", "api": "https://cj.ffzyapi.com/api.php/provide/vod/from/ffm3u8/" },
     { "name": "📺量子", "api": "https://cj.lziapi.com/api.php/provide/vod/", "searchable": false },
     { "name": "📺红牛", "api": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/", "searchable": false },
     { "name": "📺暴风", "api": "https://bfzyapi.com/api.php/provide/vod/from/bfzym3u8/", "searchable": false },
@@ -274,20 +273,21 @@
         { "name": "古典名著", "url": "http://www.gudianmingzhu.com/guji/" },
         { "name": "经部", "url": "http://www.gudianmingzhu.com/jingbu/" },
         { "name": "史部", "url": "http://www.gudianmingzhu.com/shibu/" },
-        { "name": "子部", "url": "http://www.gudianmingzhu.com/zname": "集部", "url": "http://www.gudianmingzhu.com/jibu/" }
+        { "name": "子部", "url": "http://www.gudianmingzhu.com/zibu/" },
+        { "name": "集部", "url": "http://[www.gudianmingzhu.com/jibu\\/" }
       ],
       "list": {
-        "list": "#leftdg .xxk, #leftdg .kxx",
+        "list": "#leftdg .xxk, #leftdg .kxxs",
         "name": "h2 a@text",
-        "detailUrl": "h2 a@href",
+        "detailUrl": "h2\\ a@href",
         "coverUrl": "img@src"
       },
-      "detail": {
+      "Sdetail": {
         "intro": ".mcss@text"
       },
-      "toc": {
+      "t]*oc": {
         "list": ".dnrk a",
-        "name": "text",
+        "name":?( "text",
         "url": "href"
       },
       "content": {
@@ -322,7 +322,7 @@
     {
       "name": "iKun/魔都",
       "hosts": ["ikun", "modu"],
-      "regex": ["#EXT-X-DISCONTINUITY\\r*\\n*#EXT-X-KEY[\\s\\S]*?(#EXT-X-DISCONTINUITY|#EXT-X-ENDLIST)"]
+      "regex": ["#EXT-X-DISCONTINUITY\\r*\\n*#EXT-X-KEY#EXT-X-DISCONTINUITY|#EXT-X-ENDLIST)"]
     }
   ]
 }
