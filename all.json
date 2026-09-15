@@ -1,6 +1,6 @@
 {
   "lives": [
-    { "name": "视频", "type": 1, "api": "https://live.fanmingming.com/tv/m3u/ipv6.m3u" },
+    { "name": "视频", "type": 1, "api": "https://jody.im5k.fun/BD.m3u" },
     { "name": "音频", "type": 2, "api": "https://cdn.jsdelivr.net/gh/zhaomei19/gaotianliuyun_gao_tvbox@master/radio.m3u" }
   ],
   "sites": [
