@@ -1,6 +1,6 @@
 {
   "lives": [
-    { "name": "视频", "type": 1, "api": "https://gh-proxy.com/raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv/iptv6.m3u" },
+    { "name": "视频", "type": 1, "api": "https://iptv-org.github.io/iptv/index.m3u" },
     { "name": "音频", "type": 2, "api": "https://cdn.jsdelivr.net/gh/zhaomei19/gaotianliuyun_gao_tvbox@master/radio.m3u" }
   ],
   "sites": [
