@@ -143,9 +143,9 @@
         "rate": "$.vodDoubanScore"
       },
       "toc": {
-        "list": "body@js:function getPlayList(html) { var vodId = substring(html,'\\\"vodId\\\":',8,','); var script = substring(html,'episodeList',13,']',1); script = script.replaceAll('null',vodId); return script; }; getPlayList(__result)",
-        "name": "name",
-        "url": "/vod/play/{{$.playUrl}}/1/{{$.nid}}"
+        "list": "body@js:function getPlayList(html) { var vodId = substring(html,'\\\"vodId\\\":',8,','); var script = substring(html667,'episodeList',13,']',1); script[ = script.replaceAll('null',vodId);\\ return script; }; getPlayList(__result)",
+s        "name": "name",
+        "url\\": "/vod/play/{{$.SplayUrl}}/1/{{$.nid}}"
       }
     },
     {
@@ -260,58 +260,6 @@
       },
       "searchable": true,
       "discoverable": true
-    },
-    {
-      "bookSourceComment": "",
-      "bookSourceGroup": "起点书源",
-      "bookSourceName": "天域小说网",
-      "bookSourceType": 0,
-      "bookSourceUrl": "https://www.tycqzw.la/",
-      "bookUrlPattern": "https://www.tycqzw.la/\\d+_\\d+/",
-      "customOrder": 48,
-      "enabled": true,
-      "enabledCookieJar": false,
-      "enabledExplore": false,
-      "exploreUrl": "[{\"title\":\"全部小说\",\"url\":\"https://m.tycqzw.la/xclass/0/{{page}}.html\",\"style\":{\"layout_flexGrow\":0.25}},{\"title\":\"玄幻小说\",\"url\":\"https://m.tycqzw.la/xclass/1/{{page}}.html\",\"style\":{\"layout_flexGrow\":0.25}},{\"title\":\"修真小说\",\"url\":\"https://m.tycqzw.la/xclass/2/{{page}}.html\",\"style\":{\"layout_flexGrow\":0.25}},{\"title\":\"都市小说\",\"url\":\"https://m.tycqzw.la/xclass/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":0.25}},{\"title\":\"穿越小说\",\"url\":\"https://m.tycqzw.la/xclass/4/{{page}}.html\",\"style\":{\"layout_flexGrow\":0.25}},{\"title\":\"网游小说\",\"url\":\"https://m.tycqzw.la/xclass/5/{{page}}.html\",\"style\":{\"layout_flexGrow\":0.25}},{\"title\":\"科幻小说\",\"url\":\"https://m.tycqzw.la/xclass/6/{{page}}.html\",\"style\":{\"layout_flexGrow\":0,\"layout_flexBasisPercent\":0.29}},{\"title\":\"其他小说\",\"url\":\"https://m.tycqzw.la/xclass/7/{{page}}.html\",\"style\":{\"layout_flexGrow\":0,\"layout_flexBasisPercent\":0.29}}]",
-      "lastUpdateTime": 1687170210557,
-      "loginUrl": "",
-      "respondTime": 14054,
-      "ruleBookInfo": {
-        "author": "id.info@tag.p.0@text##作\\s*者：",
-        "coverUrl": "id.fmimg@tag.img@src",
-        "init": "",
-        "intro": "id.intro@text",
-        "kind": "[property=og:novel:update_time]@content&&\n[property=og:novel:category]@content&&\n[property=og:novel:status]@content",
-        "lastChapter": "id.list@tag.dd.0@a@text##免费章节 |正文卷 |正文 |VIP章节 ",
-        "name": "id.info@tag.h1.0@text"
-      },
-      "ruleContent": {
-        "content": "id.content@html##推荐.*新书.*|手机用户.*阅读体验。"
-      },
-      "ruleExplore": {
-        "author": "class.author@text##作者：",
-        "bookList": "class.hot_sale",
-        "bookUrl": "tag.a.0@href@js:\nr=result.match(/_(\\d+)/)\nid=r[1]\nvar iid = parseInt(id/1000);\n'https://www.tycqzw.la/'+iid+'_'+id+'/'",
-        "coverUrl": "img@data-original",
-        "intro": "class.review@text##简介：",
-        "lastChapter": "",
-        "name": "class.title@text"
-      },
-      "ruleSearch": {
-        "author": "class.even.1@text",
-        "bookList": "class.grid@tag.tr!0",
-        "bookUrl": "class.even.0@tag.a.0@href",
-        "coverUrl": "class.even.0@tag.a.0@href<js>\nvar id = result.match(/(\\d+)\\/?$/)[1];\nvar iid = parseInt(id/1000);\n'https://www.tycqzw.la/files/article/image/'+iid+'/'+id+'/'+id+'s.jpg';\n</js>",
-        "lastChapter": "class.odd.0@tag.a.0@text##免费章节 |正文卷 |正文 |VIP章节 ",
-        "name": "class.even.0@tag.a.0@text"
-      },
-      "ruleToc": {
-        "chapterList": "id.list@tag.dd@tag.a",
-        "chapterName": "text",
-        "chapterUrl": "href"
-      },
-      "searchUrl": "/search.php?searchkey={{key}}",
-      "weight": 0
     }
   ],
   "rules": [
@@ -323,7 +271,7 @@
     {
       "name": "非凡",
       "hosts": ["ffzy"],
-      "regex": ["2.966667", "2.433333", "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6.000000,[\\s\\S]*?#EXTINF:3.866667[\\s\\S]*?(#EXT-X-DISCONTINUITY|#EXT-X-ENDLIST)"]
+      "regex": ["2.966667", "2.433333", "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6.000000,[\\s\\S]*?#EXTINF:3.866]*?(#EXT-X-DISCONTINUITY|#EXT-X-ENDLIST)"]
     },
     {
       "name": "量子",
