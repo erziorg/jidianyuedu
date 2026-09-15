@@ -262,46 +262,48 @@
       "discoverable": true
     },
     {
-      "name": "天域小说网",
+      "name": "🔰 天域小说网",
       "type": 10,
-      "api": "https://www.tycqzw.com",
+      "api": "https://www.zmccx.com/",
+      "bookUrlPattern": "https://www.zmccx.com/\\d+_\\d+/",
       "searchable": true,
       "discoverable": true,
-      "search": {
-        "url": "/search.php?searchkey={{key}}",
-        "list": "class.grid@tag.tr!0",
-        "name": "class.even.0@tag.a.0@text",
-        "author": "class.even.1@text",
-        "coverUrl": "class.even.0@tag.a.0@href@js:var id = result.match(/(\\d+)\\/?$/)[1];var iid = parseInt(id/1000);'https://www.tycqzw.com/files/article/image/'+iid+'/'+id+'/'+id+'s.jpg';",
-        "detailUrl": "class.even.0@tag.a.0@href",
-        "lastChapter": "class.odd.0@tag.a.0@text##免费章节 |正文卷 |正文 |VIP章节 ",
-        "kind": ""
-      },
-      "list": {
-        "list": "class.hot_sale",
-        "name": "class.title@text",
-        "author": "class.author@text##作者：",
-        "coverUrl": "img@data-original",
-        "detailUrl": "tag.a.0@href@js:r=result.match(/_(\\d+)/);id=r[1];var iid = parseInt(id/1000);'https://www.tycqzw.com/'+iid+'_'+id+'/';",
-        "intro": "class.review@text##简介：",
-        "lastChapter": ""
-      },
-      "detail": {
-        "intro": "id.intro@text",
-        "name": "id.info@tag.h1.0@text",
+      "header": "",
+      "exploreUrl": "全部小说::http://m.zmccx.com/xclass/0/{{page}}.html\n玄幻小说::http://m.zmccx.com/xclass/1/{{page}}.html\n修真小说::http://m.zmccx.com/xclass/2/{{page}}.html\n都市小说::http://m.zmccx.com/xclass/3/{{page}}.html\n穿越小说::http://m.zmccx.com/xclass/4/{{page}}.html\n网游小说::http://m.zmccx.com/xclass/5/{{page}}.html\n科幻小说::http://m.zmccx.com/xclass/6/{{page}}.html\n其他小说::http://m.zmccx.com/xclass/7/{{page}}.html",
+      "ruleBookInfo": {
         "author": "id.info@tag.p.0@text##作\\s*者：",
-        "kind": "[property=og:novel:update_time]@content&&[property=og:novel:category]@content&&[property=og:novel:status]@content",
+        "coverUrl": "id.fmimg@tag.img@src",
+        "intro": "id.intro@text",
+        "kind": "id.info@tag.p.2@text##最后更新：",
         "lastChapter": "id.list@tag.dd.0@a@text##免费章节 |正文卷 |正文 |VIP章节 ",
-        "coverUrl": "id.fmimg@tag.img@src"
+        "name": "id.info@tag.h1.0@text"
       },
-      "toc": {
-        "list": "id.list@tag.dd@tag.a",
-        "name": "text",
-        "url": "href"
+      "ruleContent": {
+        "content": "id.content@html##推荐.*新书.*"
       },
-      "content": {
-        "content": "id.content@html##推荐.*新书.*|手机用户.*阅读体验。"
-      }
+      "ruleExplore": {
+        "author": "class.author@text##作者：",
+        "bookList": "class.hot_sale",
+        "bookUrl": "tag.a.0@href@js:\nr=result.match(/_(\\d+)/)\nid=r[1]\nvar iid = parseInt(id/1000);\n'http://www.zmccx.com/'+iid+'_'+id+'/'",
+        "coverUrl": "img@data-original",
+        "intro": "class.review@text##简介：",
+        "lastChapter": "",
+        "name": "class.title@text"
+      },
+      "ruleSearch": {
+        "author": "class.even.1@text",
+        "bookList": "class.grid@tag.tr!0",
+        "bookUrl": "class.even.0@tag.a.0@href",
+        "coverUrl": "class.even.0@tag.a.0@href<js>\nvar id = result.match(/(\\d+)\\/?$/)[1];\nvar iid = parseInt(id/1000);\n'https://www.zmccx.com/files/article/image/'+iid+'/'+id+'/'+id+'s.jpg';\n</js>",
+        "lastChapter": "class.odd.0@tag.a.0@text##免费章节 |正文卷 |正文 |VIP章节 ",
+        "name": "class.even.0@tag.a.0@text"
+      },
+      "ruleToc": {
+        "chapterList": "id.list@tag.dd@tag.a",
+        "chapterName": "text",
+        "chapterUrl": "href"
+      },
+      "searchUrl": "https://www.zmccx.com/search.php?searchkey={{key}}"
     }
   ],
   "rules": [
