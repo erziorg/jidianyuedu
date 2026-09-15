@@ -274,20 +274,20 @@
         { "name": "经部", "url": "http://www.gudianmingzhu.com/jingbu/" },
         { "name": "史部", "url": "http://www.gudianmingzhu.com/shibu/" },
         { "name": "子部", "url": "http://www.gudianmingzhu.com/zibu/" },
-        { "name": "集部", "url": "http://[www.gudianmingzhu.com/jibu\\/" }
+        { "name": "集部", "url": "http://www.gudianmingzhu.com/jibu/" }
       ],
       "list": {
-        "list": "#leftdg .xxk, #leftdg .kxxs",
+        "list": "#leftdg .xxk, #leftdg .kxx",
         "name": "h2 a@text",
-        "detailUrl": "h2\\ a@href",
+        "detailUrl": "h2 a@href",
         "coverUrl": "img@src"
       },
-      "Sdetail": {
+      "detail": {
         "intro": ".mcss@text"
       },
-      "t]*oc": {
+      "toc": {
         "list": ".dnrk a",
-        "name":?( "text",
+        "name": "text",
         "url": "href"
       },
       "content": {
@@ -322,7 +322,7 @@
     {
       "name": "iKun/魔都",
       "hosts": ["ikun", "modu"],
-      "regex": ["#EXT-X-DISCONTINUITY\\r*\\n*#EXT-X-KEY#EXT-X-DISCONTINUITY|#EXT-X-ENDLIST)"]
+      "regex": ["#EXT-X-DISCONTINUITY\\r*\\n*#EXT-X-KEY[\\s\\S]*?(#EXT-X-DISCONTINUITY|#EXT-X-ENDLIST)"]
     }
   ]
 }
