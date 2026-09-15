@@ -262,40 +262,46 @@
       "discoverable": true
     },
     {
-      "name": "📙国学",
+      "name": "天域小说网",
       "type": 10,
-      "api": "",
-      "header": {
-        "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148 Safari/604.1",
-        "Referer": "http://www.gudianmingzhu.com/"
+      "api": "https://www.tycqzw.com",
+      "searchable": true,
+      "discoverable": true,
+      "search": {
+        "url": "/search.php?searchkey={{key}}",
+        "list": "class.grid@tag.tr!0",
+        "name": "class.even.0@tag.a.0@text",
+        "author": "class.even.1@text",
+        "coverUrl": "class.even.0@tag.a.0@href@js:var id = result.match(/(\\d+)\\/?$/)[1];var iid = parseInt(id/1000);'https://www.tycqzw.com/files/article/image/'+iid+'/'+id+'/'+id+'s.jpg';",
+        "detailUrl": "class.even.0@tag.a.0@href",
+        "lastChapter": "class.odd.0@tag.a.0@text##免费章节 |正文卷 |正文 |VIP章节 ",
+        "kind": ""
       },
-      "categories": [
-        { "name": "古典名著", "url": "http://www.gudianmingzhu.com/guji/" },
-        { "name": "经部", "url": "http://www.gudianmingzhu.com/jingbu/" },
-        { "name": "史部", "url": "http://www.gudianmingzhu.com/shibu/" },
-        { "name": "子部", "url": "http://www.gudianmingzhu.com/zibu/" },
-        { "name": "集部", "url": "http://www.gudianmingzhu.com/jibu/" }
-      ],
       "list": {
-        "list": "#leftdg .xxk, #leftdg .kxx",
-        "name": "h2 a@text",
-        "detailUrl": "h2 a@href",
-        "coverUrl": "img@src"
+        "list": "class.hot_sale",
+        "name": "class.title@text",
+        "author": "class.author@text##作者：",
+        "coverUrl": "img@data-original",
+        "detailUrl": "tag.a.0@href@js:r=result.match(/_(\\d+)/);id=r[1];var iid = parseInt(id/1000);'https://www.tycqzw.com/'+iid+'_'+id+'/';",
+        "intro": "class.review@text##简介：",
+        "lastChapter": ""
       },
       "detail": {
-        "intro": ".mcss@text"
+        "intro": "id.intro@text",
+        "name": "id.info@tag.h1.0@text",
+        "author": "id.info@tag.p.0@text##作\\s*者：",
+        "kind": "[property=og:novel:update_time]@content&&[property=og:novel:category]@content&&[property=og:novel:status]@content",
+        "lastChapter": "id.list@tag.dd.0@a@text##免费章节 |正文卷 |正文 |VIP章节 ",
+        "coverUrl": "id.fmimg@tag.img@src"
       },
       "toc": {
-        "list": ".dnrk a",
+        "list": "id.list@tag.dd@tag.a",
         "name": "text",
         "url": "href"
       },
       "content": {
-        "content": ".xxtt@html",
-        "nextUrl": ".djpagecon .next@href"
-      },
-      "searchable": false,
-      "discoverable": true
+        "content": "id.content@html##推荐.*新书.*|手机用户.*阅读体验。"
+      }
     }
   ],
   "rules": [
