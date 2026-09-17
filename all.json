@@ -4,7 +4,48 @@
     { "name": "音频", "type": 2, "api": "https://cdn.jsdelivr.net/gh/zhaomei19/gaotianliuyun_gao_tvbox@master/radio.m3u" }
   ],
   "sites": [
-    {"name":"🎧天天评书","type":11,"api":"https://tthdy.cc","categories":[{"url":"/tt/8-{{page}}.html","name":"百家讲坛"},{"url":"/tt/1-{{page}}.html","name":"言情"},{"url":"/tt/2-{{page}}.html","name":"武侠"},{"url":"/tt/3-{{page}}.html","name":"悬疑"},{"url":"/tt/4-{{page}}.html","name":"历史"},{"url":"/tt/5-{{page}}.html","name":"军事"},{"url":"/tt/6-{{page}}.html","name":"评书"},{"url":"/tt/7-{{page}}.html","name":"相声小品"},{"url":"/tt/9-{{page}}.html","name":"商业财经"},{"url":"/tt/10-{{page}}.html","name":"健康养生"}],"detail":{"intro":".detail-content@text","author":".data5 a.0@text","category":".data2.0@text"},"search":{"list":".stui-vodlist .stui-vodlist__thumb","name":"title","detailUrl":"href","coverUrl":"data-original","tips":".pic-text@text","url":"/search.php?searchword={{key}}"},"toc":{"list":".stui-content__playlist a","name":"text","url":"href"},"content":{"content":".stui-player__video script.0@text@js:eval(result); now;"},"searchable":true,"discoverable":true,"key":"tthdy.cc"},
+    {
+  "name": "🎧天天评书",
+  "type": 11,
+  "api": "https://www.tthdy.cc",
+  "categories": [
+    { "url": "/tt/8-{{page}}.html", "name": "百家讲坛" },
+    { "url": "/tt/1-{{page}}.html", "name": "言情" },
+    { "url": "/tt/2-{{page}}.html", "name": "武侠" },
+    { "url": "/tt/3-{{page}}.html", "name": "悬疑" },
+    { "url": "/tt/4-{{page}}.html", "name": "历史" },
+    { "url": "/tt/5-{{page}}.html", "name": "军事" },
+    { "url": "/tt/6-{{page}}.html", "name": "评书" },
+    { "url": "/tt/7-{{page}}.html", "name": "相声小品" },
+    { "url": "/tt/9-{{page}}.html", "name": "商业财经" },
+    { "url": "/tt/10-{{page}}.html", "name": "健康养生" },
+    { "url": "/tt/11-{{page}}.html", "name": "儿童读物" }
+  ],
+  "detail": {
+    "intro": ".detail-content@text",
+    "author": ".data5 a.0@text",
+    "category": ".data.2 a@text"
+  },
+  "search": {
+    "list": ".stui-vodlist .stui-vodlist__thumb",
+    "name": "title",
+    "detailUrl": "href",
+    "coverUrl": "data-original",
+    "tips": ".pic-text@text",
+    "url": "/search.php?searchword={{key}}"
+  },
+  "toc": {
+    "list": ".stui-content__playlist a",
+    "name": "text",
+    "url": "href"
+  },
+  "content": {
+    "content": ".stui-player__video script.0@text@js:eval(result); now;"
+  },
+  "searchable": true,
+  "discoverable": true,
+  "key": "tthdy.cc"
+},
     {
   "name": "🧲荐片影视",
   "api": "https://api.ztcgi.com",
